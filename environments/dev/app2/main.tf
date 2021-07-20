@@ -1,10 +1,10 @@
 terraform {
   backend "remote" {
-  organization = "myorg"
+    organization = "myorg"
 
-  workspaces {
+    workspaces {
       name = "devops"
-  }
+    }
 
   }
 }
@@ -13,6 +13,6 @@ module "app1" {
   source  = "../../app1"
   version = "1.2.20"
 
-  environment                               = var.environment
-  cidr_block                                = var.cidr_block
+  environment = var.environment
+  cidr_block  = var.cidr_block
 }

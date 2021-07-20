@@ -1,14 +1,14 @@
 ##### Terraform Skeleton single repo with multiple ENV, `master` branch will be single source of truth
-
+---
 # Terraform skeleton structure
->tree -L 4
+`$ tree -L 4`
+
 ```yml
 .
 ├── README.md
 ├── app1
 │   ├── alb.tf
 │   ├── ec2.tf
-│   ├── networking.tf
 │   ├── rds.tf
 │   ├── route53.tf
 │   ├── s3.tf
@@ -16,7 +16,6 @@
 ├── app2
 │   ├── alb.tf
 │   ├── ec2.tf
-│   ├── networking.tf
 │   ├── rds.tf
 │   ├── route53.tf
 │   └── variables.tf
